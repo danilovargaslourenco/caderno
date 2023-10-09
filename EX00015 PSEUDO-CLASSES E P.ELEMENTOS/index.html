@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+body {background-image: linear-gradient(to left, #d5e8c4, #7dc77d, #508e50);
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+h1 { color: rgb(1, 62, 1);}
+
+div { background-color: black;
+color: aquamarine;
+border:1px solid white;}
+
+.inline {
+    display: inline-block;
+}
+
+#change:hover {background-color: rgb(0, 78, 78);}
+a:visited { color: #f013d7;}
+a:hover { background-image: linear-gradient(to top, #ff2247, green);}
+
+li::after {content: '<<' ;}
+li::before {content: '>>';}
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Sobre Pseudo-Classes</h1>
+    <h2>Div</h2>
+    <p>Para entendermos as <ins>pseudo-classes</ins>, precisamos entender brevemente sobre as <ins>div</ins>, elas sao apenas um area, uma linha que segue ate o final da pagina. Podemos mudar a altura e largura das div's com as Propriedades de Estilo "Height" e "Width", também conseguimos mudar a posição dos textos nas div's com a Propriedade text-align, sendo que podemos adicionar bordas às div's com a Propriedade "border" com o valor "solid".<small>Por padrão as div's ficam alinhadas uma em cima da outra, mas se quisermos que fiquem uma do lado da outra, devemos usar a Propriedade de Estilo "display" com o valor "inline-block", que seria um alinhamento de bloco em linha, assim fica tudo na mesma linha.</small> Segue o exemplo abaixo <br>
+        <div class="inline">div 01</div>
+        <div class="inline">div 02</div>
+        <div class="inline">div 03</div> <br>
+        Segue o codigo: <br>
+<pre><code>&lt;div&gt;div 01&lt;/div&gt;
+&lt;div&gt;div 02&lt;/div&gt;
+&lt;div&gt;div 03&lt;/div&gt;
+</code></pre> <br>
+E, sem a tag "inline-block" elas ficam assim: <br>
+        <div>div 01</div>
+        <div>div 02</div>
+        <div>div 03</div>
+Voce pode dar id as divs ou classes tambem.
+</p>
+<h2>Pseudo-Classes</h2>
+<p>As pseudo-classses se referem a um estado especial de um elemento, se voce quiser dar uma acao especial a ele, voce pode usar diferentes maneiras para determinar essa mudanca. Nos referimos a uma pseudo-class com ":", como exemplo iremos usar a tag <ins>hover</ins> e <ins>visited</ins>, segue abaixo: <br>
+</p>
+<p>Nesse exemlo abaixo, criaremos uma div, com background-color e com border, e quando passaremos o mouse em cima, ela mudara de cor:</p>
+<div id="change">Hello, World!</div>
+
+<pre><code>
+CSS  --&gt;  change:hover { background-color: rgb(0, 70, 70); border: 1px solid white}
+
+HTML --&gt;   &lt;div id="change"&gt;Hello, World!&lt;/div&gt;
+</code></pre> 
+<p>Agora o exemplo do <ins>visited</ins>, que se refere a algum link que ja foi visitado. No caso quero que ele mude de cor apos ser visitado, nao fique roxo como padrao.</p>
+<a href="https://google.com">Google.com</a>
+<pre><code>
+CSS --&gt; a:visited { color: #f013d7;}
+a:hover { background-image: linear-gradient(to top, #ff2247, green);}
+
+HTML --&gt; &lt;a href="https://google.com"&gt;Google.com&lt;/a&gt;
+</code></pre>
+<p>Temos muitas outras variacoes de pseudo-classes tambem, como: <code>:visited, :active, :checked, :empty e :focus. </code></p>
+<h2>Sinalizando para tags dentro das div's</h2>
+<p>Para voce indicar alguma pseudo-classe para alguma tag dentro de uma div, usa se "&gt;", como exemplo: "div &gt; p" voce estaria indicando um paragrafo dentro da div. Um paragrafo filho de uma div.</p>
+<h1>Pseudo-Elementos</h1>
+<p>Os pseudo-elementos sao referencias ao conteudo periferico do elemento, como o conteudo antes '::before' ou o conteudo depois '::after', voce pode adicionar qualquer coisa antes ou depois do elemento apenas usando os "::" after ou before. Para todos pseudo-elementos nos referimos com "::". Siga o exemplo:
+</p>
+<ul>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Lorem ipsum dolor sit amet.</li>
+</ul>
+<pre><code>
+CSS    li::after {content: '<<' ;}
+       li::before {content: '>>';}
+</code></pre>
+</body>
+</html>

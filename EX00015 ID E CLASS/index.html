@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID and Class</title>
+    <style>
+        body {
+            background-color: rgb(202, 172, 231);
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1#textoprincipal {
+            text-align: center;
+            font-weight: bold;
+            background-color: blueviolet;
+        }
+        pre {
+            text-align: center;
+            background-image: linear-gradient(90deg, rgb(87, 40, 108), rgb(181, 62, 240));
+        }
+        .subtexto {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="textoprincipal">Aprendendo sobre os parametros id e class</h1>
+    <h1 class="subtexto">Quando usar id?</h1>
+    <p>O parametro id vem logo apos qualquer tag que voce queira modificar diferentemente das outras, como por exemplo, voce queira colocar o h1 principal diferente dos outros h1, ou um paragrafo alinhado diferentemente dos demais paragrafos, voce identifica essa tag que voce quer diferenciar, com <code>id=NomeEscolhido</code>, e no CSS voce pode simplesmente se referir a tag usando #NomeEscolhido. Voce pode usar a mesma id apenas para uma tag, esse mesmo id nao pode ser usado varias vezes, portanto, esse parametro e um pouco limitado.Vejamos um exemplo. <br>
+    
+    <pre>
+          <code>html  &lt;h1 id=textoprincipal&gt;Ola mundo&lt;/h1&gt;
+           
+          css        h1#textoprincipal {
+                       text-align:center}
+        </code>
+    </pre></p>
+    <h1 class="subtexto">Quando usar class?</h1>
+    <p>A class pode se tornar muito mais util que a id, pelo fatomdemvoce poder usa-la em diferentes tags para se referir a uma especificacao no CSS. A class e usada da mesma maneira da id, mas para se referir a essa class no CSS voce usa o "." ao inves da "#" da id. Voce tambem pode usar varias class na mesma tag, (separadas apenas por espaco). Veja o exemplo abaixo. <br>
+    
+<pre><code>&lt;h1 class=principais&gt;Titulo 1&lt;/h1&gt;
+&lt;h1 class=principais&gt;Titulo 2&lt;/h1&gt;
+
+    .principais {
+        text-align:center
+        color: blue}</code></pre>
+Nesse caso acima, os 2 h1 selecionados herdarao as configuracoes inseridas dentro dessa class. Na hierarquia do CSS, o id vem primeiro, logo apos o class e por ultimo a definicao geral.
+
+<small>Nota: No HTML temos a tag "&lt;span&gt;&lt;span&gt;", ela não tem uma função específica, serve apenas para demarcar um trecho de texto caso quisermos fazer algum tipo de alteração de estilo nesse trecho com uma class e etc.
+</small>
+
+</p>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bumbu';
+    src: url('fonts/bBumbuSushi.ttf') format(truetype);
+}
+
+
+/* Ideal ter mais de uma variacao do mesmo arquivo externo, como otf e ttf*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, white, lightblue, cornflowerblue, blue, darkblue);
+    margin: auto;
+}
+
+main {
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    border: solid 2px black;
+    text-align: justify;
+
+
+}
+
+.titulos {
+    text-align: center;
+    font-family: 'Bumbu', Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, white 1%, black, black, white 99%);
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 300;
+    font: italic, 300, 2em, Georgia, 'Times New Roman';
+}
+
+#firsttitle {
+    margin-top: 0px;
+
+}
+
+.paragrafos {
+    margin: 15px 25px;
+    text-indent: 5px;
+    font-family: 'Roboto', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 8px;
+}
+
+
+picture {
+    width: fit-content;
+    margin: auto;
+    display: block;
+}
+
+picture:hover {
+    border: 8px solid black;
+}
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <style>
+        mark {background-color: rgb(142, 232, 124);}
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Sobre Videos</h1>
+    <h2>Compatibilidade e Formatos</h2>
+    <P> A maioria dos navegadores sao compativeis com os formatos: <ins>mp4, ogv e webm</ins>(webm e um arquivo menor, mas nao costuma ter qualidade), o ideal e ter variacoes do mesmo video em diferentes formatos para casos de incompatibilidade. Voce pode usar o app <strong>HandBraker</strong> para gerar novos formatos e compactar seu video.
+    </P>
+    <h2>Videos Hospedados Localmente</h2>
+        <p>Para colocar videos hospedados localmente, (o que significa que o video esta no seu computador e voce possui o arquivo dele), voce precisa fazer o mesmo do que com os audios, colocar entre uma tag: &lt;video&gt; com os padroes <ins>controls</ins>(para aparecer o botao de play), <ins>width="xxxx"</ins>(tamanho do video no site) e um parametro muito importante e o <ins>poster:"SuaFoto"</ins> (definir a tumb do video com uma foto). Dentro da tag voce coloca os videos em ordem de reproducao de acordo com a compatibilidade (Muitos videos podem pesar muito o site e aumentar o custo de hospedagem para o cliente). Segue o exemplo: <br>
+        
+<pre><mark><code>
+&lt;video width="500" poster="SeuArquivo" controls&gt;
+&lt;source src="SuaPasta/SeuVideo" type="Consultar Media type" (opcao 1)
+&lt;source src="SuaPasta/SeuVideo" type="Consultar Media type" (opcao 2)
+&lt;/video&gt;
+</code></mark></pre>
+        <video width="500" controls poster="Videos/tumb-teste2.png">
+            <source src="estrelas compactadas.mp4" type="video/mp4">
+            <source src="Videos/estrelas.webm" type="video/webm">
+        </video> <br>
+
+<small>Atentar-se para o tamanho da imagem da tumb (parametro poster) seja do mesmo tamanho (largura e altura) que o video, para nao ficar desconexo o funcionamento.</small>
+</p>
+    
+<h2>Videos Hospedados na Internet</h2>
+<p>Voce tambem pode hospedar videos que estao upados na internet, as melhores opcoes hoje em dia sao o <ins>Youtube e Vimeo</ins>, o Youtube tera um video mais facil de ser assistido, mas o video e publico, o Vimeo tera o video com melhor qualidade e pode ser restringido, mas dependendo da velocidade da internet podera travar um pouco. Para colococar ambos no seu site e bem facil, apenas ir na descricao dos videos e clicar em "share" e depois em "incorporar", e as duas plataformas te darao o codigo pronto dos videos. Alem do mais os videos externos nao consomem banda larga do seu site, ou seja, o preco ficara menor para o seu cliente. Segue o exemplo: <br> </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C1znl_2hYG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br>
+
+<iframe src="https://player.vimeo.com/video/41136699?h=8215a17a24" width="560" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen muted autoplay></iframe>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Style Sheets</title>
+</head>
+<body>
+    <h1 style="color: lime; font-family: Arial, Helvetica, sans-serif; font-size: 25px;" >Estilos CSS</h1>
+    <h2 style="color: indigo; font-family: cursive;">Estilo inline</h2>
+    <p style="text-align: justify;">Quando o parametro &lt;style&gt; e colocado na mesma linha que o codigo. Algo que nao e recomendado para toda estrutura do site pois ira dificultar a edicao/manuntencao e poluira o seu codigo. <ins>Indicado para alteracoes pontuais.</ins> Seguem os exemplos abaixo: </p>
+    <mark style="color: rgb(4, 85, 15);">
+        <p style="text-align: center;">
+            <code>&lt;h1 style="color: lime; font-family: Arial, Helvetica, sans-serif; font-size: 25px;" >Estilos CSS&lt;/h1&gt;</code> <br>
+            <code>&lt;h2 style="color: indigo; font-family: cursive;">Estilo inline&lt;/h2&gt;</code>
+        </p>
+    </mark>
+    <h2>Estilos Internos/Locais</h2>
+    <p>Maneira de criacao de estilo do seu site de maneira mais organizada e padronizada. Voce vai abrir uma tag <code>&lt;style&gt;</code> no <em>head</em> do seu codigo, e selecionara todas as tags que voce escrever, e e editara de uma vez so. Segue o exemplos; <br>
+    </p><pre>
+        <code>
+&lt;head&gt;
+    &lt;style&gt;
+        p {color="X" font-family="X" text-align="justify"}
+        h1 {backgroud-color="X" font-size="25px"}
+    &lt;/style&gt;
+&lt;/head&gt;
+        </code>
+    </pre>
+    <p>Dessa maneira, voce selecionara todos os "p" e todos os "h1" e incluira essas informacoes de estilo em todos. Esse estilo e requer menos digitos e deixa organizado seu codigo.</p>
+
+    <h2>CSS Externos</h2>
+
+
+    
+    
+</body>
+</html>

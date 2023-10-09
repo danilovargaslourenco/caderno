@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criacao de website</title>
+</head>
+<style>
+   body {
+        background-color: lightslategray;
+        padding: 10px;
+
+   }
+   
+   main { background-color: rgb(255, 255, 255);
+           font-family: Arial, Helvetica, sans-serif;
+           height: auto;
+           margin: auto;
+           min-width: 300px;
+           max-width: 800px;
+           padding: 10px;
+    }
+    
+    main h1 {
+        text-align: center;
+        background-color: rgb(48, 46, 55);
+        color: white;
+    }
+
+    main h2, h3 {
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: underline;
+        
+    }
+    main code {
+        background-color: rgba(42, 243, 42, 0.71);
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <main>
+        <h1>Coisas Importantes para Criacao de um Website</h1>
+        <h2>Planejamento</h2>
+        <p>Antes de mais nada precisamos planejar o site, como <strong>layout, cores e fontes</strong>. Temos a ferramenta chamada <a href="https://mockflow.com">MockFlow</a>, para layout, e para cores e fontes ja vimos anteriormente.</p>
+        <h2>Semantica do site</h2>
+        <p>Muito importante se atentar a semantica do site, como cada parte do site que voce criou com o mockflow esta de acordo com as GROUPING TAGS e cada parte organizada corretamente. Interessante colocar lado a lado o esboco de layout e ir seguindo de maneira organizada o seu codigo para ficar facil de ser modificado futuramente. Also important: separar tudo por pasta, dentro da pasta do seu projeto, como pasta de imagens, pasta de fontes e cada item na sua pasta. MANTER O CODIGO ORGANIZADO, tambem facilita bastante a compreensao e o desenvolvimento do site, e tambem para ajustar futuramente.</p>
+        <h2>Variaveis em CSS</h2>
+        <p>Voce pode definir uma configuracao padrao para todas as tags seguintes, como por exemplo: conseguimos definir a cor da nossa paleta como "--cor01", e com isso conseguimos apenas colocar esse nome anterior quando selecionar a cor e para mudar e so mudar na variavel, que todas as tags em que esse nome foi inserido mudara, serve como um nome para uma tag, isso facilita na hora de mudar o codigo futuramente, segue o exemplo de como fazer:</p>
+        <pre><code>:root {
+            --cor01: white;
+            --cor02: red;
+        }</code></pre>
+        <p>Agora em todos os seletores de cor que voce selecionar "var(--cor01) tera a cor white, e para alterar, basta altera-la uma vez.</p>
+        <h3>Pode usar tambem para fontes</h3>
+<pre><code>:root {
+            --fontepadrao: Arial, sans-serif;
+            --fontecursiva: 'Bambo' (exemplo), cursive;
+}</code></pre>
+            <p>Voce pode selecionar fontes padroes para serem seguidas, e novamente, para ser mudado ou editado, basta ser mudado uma vez, assim facilitando a customizacao do seu site e a edicao do mesmo.</p>
+        <h2>Configuracoes Globais CSS</h2>
+        <p>Caso voce queira selecionar TODOS as tags do seu CSS com uma definicao, por exemplo, margin:0px, ou any definicoes, e simples:
+        </p>
+<pre><code>
+* {
+    margin:0px;
+    padding:0px;
+}
+</code></pre>
+        <p>Nessa configuracao acima, TODAS as tags terao paddin e margin de 0px, isso pode facilitar na hora de customizacao e criacao do site.</p>
+
+<h2>Responsividade do site</h2>
+<p>Para montarmos um site responsivo, precisamos primeiro definir o <code>min-width</code> (o texto so ira se adaptar ate a largura minima de maneira responsiva) e o <code>max-width</code> (a largura maxima possivel do seu site, mesmo que numa tela maior). Essas sao as 2 tags mais comuns para tornar textos e titulos responsivos no seu site.</p>
+<h3>Responsividade em imagens</h3>
+<p>Para tornar imagens responsivas no seu site, voce pode usar a tag <code>width: 100%;</code> de maneira mais automatica, mas para ficar mais certinho, voce pode tambem criar imagens menores e diferentes para cada tipo de tamanho do site, como por exemplo se alguem acessar no computador vera uma imagem de tamanho diferente de alguem que esta vendo pelo celular. Para adicionar imagens diferentes de acordo com o tamanho, segue o exemplo:
+<pre><code>
+&gt;picture&lt;
+source media='max-width=800px' srcset='imagem que aparecera quando atingir 800px'
+img src='imagem principal ate os 800px' alt='x'
+&gt;/picture&lt;
+</code></pre>
+Basta selecionar o max-width e sera quando a segunda imagem ira aparecer, ideal criar outros tamanhos de imagens para a responsividade ficar melhor encaixada no site.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+body {background-color: rgb(222, 254, 254);
+      margin: auto;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;}
+img { width: 330px;
+      margin: auto;
+    display: block;}
+h1 {font-family: 'Noto Serif', serif;
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;}
+h2 {font-family: 'Noto Serif', serif;
+    font-size: 2em;}
+ul {text-align: justify;}
+
+
+    </style>
+</head>
+<body>
+    <h1>Aprendendo sobre Letras/Tipografia</h1>
+    <h2>Introducao</h2>
+    <p>Tipografia e o estudo de criacao de formas de letras, cada tipografia passando uma emocao desejada. <br>
+        <img src="Anatomia do tipo.png" alt="x">
+        <img src="Anatomia do tipo2.png" alt=""> 
+        <img src="Screenshot 2023-06-09 at 5.55.11 pm.png" alt="">
+        <h2>Tipos de Fonte</h2>
+        Fontes nao serifadas sao melhores para leitura e fontes com serifa sao melhores para titulo. <br>
+        <ul style="text-align: justify;">
+            <li>font-family: 'Courier New';-> nomes compostos precisam de 'aspas'
+            <li>font-family: sans-serif;-> qualquer fonte sem serifa</li>
+            <li>font-family: serif;-> qualquer fonte com serifa</li>
+            <li>font-family: monospace;-> qualquer fonte monoespaçada</li>
+        </ul>
+    </p>
+    <h2>Safe Combinations</h2>
+    <p>Para garantir que a fonte escolhida ira funcionar em qualquer dispositivo, usamos as <strong>Safe Combinations</strong>, colocamos a primeira opcao, se  nao funcionar, indicamos a segunda e a terceira opcao tambem. Exemplo: <br>
+        font-family: Arial, Helvetica, sans-serif; <br>
+		font-family: 'Times New Roman', Times, serif;
+    </p>
+    <h2>Tamanho das Fontes</h2>
+    <ul>
+        <li><ins>Medidas Absolutas</ins></li>
+        <p>cm, mm, in (polegada), <ins>px</ins>, pt, pc,
+        </p>
+        <li><ins>Medidas Relativas</ins></li>
+        <p><ins>em</ins>, ex, rem, vw, vh, %</p>
+    </ul>
+    <p>Nos iremos usar apenas o em e o px. 16px=1em </p>
+ <h2>Shorthand</h2>
+ <p>Ao inves de usarmos as tags: <br>
+<pre>
+          <code>font-family:Arial
+          font-size:2em
+          font-style:italic
+          font-weight:bolder
+    </code>
+</pre>Nos podemos usar simplificadamente usando a sequencia: <code>font-style -> font-weight -> font-size -> font- family.</code> que no exemplo de cima ficaria: <br>
+<code>font:italic, bolder, 2em, Arial;</code> </p>
+<h2>Google Fontes</h2>
+<p>Alem das fontes que vem imbutidas no Visual Studio Code, nos podemos extrair fontes de varias maneiras. Uma delas e usando o <a href="https://fonts.google.com">Google Fontes</a>, basta selecionas a fonte desejada, e importar o @ bem abaixo do parametro <code>&lt;style&gt;</code>. Muitas vezes a fonte extraida pode nao ter variacoes, portanto, util dar um double-check.</p>
+<h2>Fontes Externas</h2>
+<p>Na maioria das vezes, as fontes mais criativas e diferentes, nao estarao no google fonts e nem no vsc, voce tera que extrair de algum site na internet. Importante conferir se a fontem possui todos os glifos, como acentuacao e etc. Um site muito interessante e o <a href="https://www.dafont.com">Dafont</a>, la voce consegue pesquisar a fonte de acordo com o tema desejado. Para inserir essa fonte externa, voce precisa adicionar o termo <code>@font-face</code> e selecionar o arquivo baixado (o formato da maioria eh otf ou tff). Voce pode selecionar o <code>font-family</code> com o nome que quiser, mas esse nome devera ser seguido como nome oficial e deve ser usado entre aspas sempre. Apos o arquivo selecionado, colocar alguma fonte generica para caso o negador nao suportar, ter uma segunda opcao. O <code>font-weight</code> e <code>font-style</code> e apenas para a fonte se manter normal e nao em italico ou negrito. Segue o exemplo abaixo: <br>
+<pre><code>@font-face {
+    font-family: 'Dark' ;
+    src: url(MidnightMinutes_DEMO.otf);
+    font-weight: normal;
+    font-style: normal;}</code></pre></p>
+    <h2>Identificando Fontes</h2>
+    <p>
+        Para identificar fontes dentro de imagens, dependemos de alguns sites que fornecem uma função de "visão  computacional" para analisar e detectar fontes dentro dessas imagens.
+        Os sites indicados são: <strong>"What Font Is"</strong> e o <strong>"Font Squirrel"</strong>
+    </p>
+    <h2>Alinhamento de Texto</h2>
+    <p>Para alinhamento de texto, e muito facil, apenas usar a tag <code>text-align:</code> ou <code>left, right, center ou justify</code>. Dessa maneira voce alinhara o texto da maneira desejada. Voce tambem pode usar a tag <code>text-indent:</code> para determinar o espacamento inicial em cada paragrafo.
+
+
+
+
+    </p>
+</body>
+</html>

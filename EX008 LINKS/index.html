@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+mark {background-color: rgb(169, 169, 248);}
+
+    </style>
+</head>
+<body>
+    <h1>Aprendendo sobre Links e Ancoras</h1>
+    <hr>
+    <h2>Links Externos</h2>
+    <p>Para criar links no seu site, pode usar a tag <mark>&lt;a&gt;</mark>. Toda tag de link vem com o parametro <mark><em>href</em></mark> que significa a URL na qual voce esta indicando. Segue o exemplo: <br>
+        <pre><mark><code> &lt;a href="url"&gt;link text&lt;/a&gt;</code></mark></pre>
+        Existem parametros nos quais voce pode inserir dentro da tag que sao: <br>
+         <ul>
+             <li><mark><code>&lt;target="_blank"&gt;</code></mark> - Para nao abrir outra aba quando o visitante clicar no link </li>
+            <li><mark><code>&lt;target="_self"&gt;</code></mark> - Para ser aberto na mesma janela.</li>
+         </ul> 
+    Tambem existe a um parametro que indica para onde esse link vai. Segue o exemplo: <br>
+    <ul>
+        <li><mark><code>&lt;rel="next"&gt;</code></mark> - Indica que o link mostra a proxima pagina do documento atual.</li>
+        <li><mark><code>&lt;rel="external"&gt;</code></mark> - Indica que o link sera para outra pagina.</li>
+        <li><mark><code>&lt;rel="prev"&gt;</code></mark> - Indica que o link mostra a pagina anterior do documento atual.</li>
+        <li><mark><code>&lt;rel="author"&gt; - Indica o site do autor do artigo atual.</code></mark></li>
+    </ul>
+    Segue um exemplo de um codigo completo para um link externo aberto em outra aba. <br>
+    <pre><mark><code>&lt;a href=URL target"_blank" rel="external"&gt;Nome do site que voce quiser colocar&lt;/a&gt;</code></mark></pre> <br>
+    <a href="https://ge.globo.com/" target="_blank" rel="external">Globo.com</a> </p>
+    <h2>Links Internos</h2>
+<p>Para indicar pasa uma segunda pagina ou outro website de sua posse, apenas selecione o arquivo dentro do parametro <mark><code>href=</code></mark>. A proxima pagina precisa estar na mesma pasta, assim nao e necessario indicar a URL, apenas selecionar. Nos casos de troca de pagina, usar o <mark><code>rel="prev"</code></mark> para indicar a pagina anterior, ou <mark><code>rel="next"</code></mark> para indicar a proxima pagina. Segue o exemplo: <br>
+<a href="pag002.html" target=_self  rel="next">Clique aqui e acesse a minha segunda pagina.</a>    
+</p>
+<h2>Links para Download</h2>
+<p>Para colocar links para download voce precisa usar o parametro <mark><code>download=Seu Arquivo</code></mark> e tambem o <mark><code>type=(codigo especifico para cada tipo de arquivo)</code></mark>. Para descobrir o codigo, acesse o site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">iana.org</a> e busque pelo formato correto do seu arquivo. Segue o exemplo: <br>
+    
+    <mark><code>&lt;a href="../EX008 LINKS/downloads/Curriculum.pdf" download=Curriculum.pdf type=application/pdf&gt;Baixar Curriculum em PDF&gt;/a&gt;</code></mark>
+    <a href="../EX008 LINKS/downloads/Curriculum.pdf" download="Curriculum.pdf type=application/pdf">Baixar Curriculum em PDF</a>
+
+
+
+    
+</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        mark {background-color: rgb(153, 231, 231);}
+    </style>
+</head>
+<body>
+    <h1>Aprendendo sobre Audio</h1>
+    <p>E possivel colocar um Audio para ser reproduzido no seu site, mas e importante tomar cuidado com o tamanho do arquivo, pois se nao o site ficara muito pesado. Os audios mais comuns sao em <ins>mp3</ins>, mas e possivel que nao seja compativel com alguns navegadores, como alternativa temos <ins>ogg</ins>, e <ins>wav</ins>(nao recomendado). Para upar um audio no seu site, usamos a seguinte tag: <br> <code>&lt;<mark>audio src="Seu arquivo" controls</mark>,</code>(para aparecer o botao no site) <mark><code>autoplay</code></mark>(caso voce queira que seja reproduzido automaticamente)&gt;. <br> 
+<br>
+<pre>
+Segue o exemplo:
+
+<mark><code>
+&lt;audio src="happy-mistake.mp3" controls&lt;/audio&gt;</code></mark>
+</pre>
+        <audio src="happy-mistake.mp3" controls></audio> <br>
+    
+        Caso voce queira se assegurar que o audio ficara disponivel, basta encaixar as variacoes do audio em seguida do mp3. Mas para isso abriremos a tag &lt;audio&gt; e teremos o atributo preload para indicar se o conteudo sera baixado de forma automatica ou nao, Mais abaixo explicarei as opcoes. Tambem temos a opcao de loop, para quando o audio terminar, reiniciar automaticamente. Dentro da tag audio, adicionaremos a tag &lt;source src&gt; com variacoes do audio, com a forma padrao comecando primeiro, indicando, para caso a primeira opcao falhe, existem outras disponiveis. Segue o exemplo: <br>
+
+<pre><code><mark>
+&lt;audio preload=metadata controls autoplay loop&gt;
+&lt;source src=seuaudio.mp3 type=audio/mpeg&gt;
+&lt;source src=seuaudio.ogg type=audio/ogg&gt;
+&lt;source src=seuaudio.wav type=audio/wav&gt;
+&lt;/audio&gt;
+</mark></code></pre>
+As variacoes de preload sao:
+<ul>
+    <li>metadata: Vai permitir o cliente baixar minimamente o arquivo (duracao, detalhes e etc).
+    <li>auto: Vai baixar o audio automaticamente (pode prejudicar o funcionamento do site)
+    <li>none: Vai baixar apenas quando o usuario clicar para baixar.
+</ul>
+<br>
+<small>Atencao que a media type de mp3 e um pouco diferente: audio/mpeg.</small>
+
+
+
+    </p>
+    
+</body>
+</html>

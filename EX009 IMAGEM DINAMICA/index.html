@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+    <style>
+        mark {background-color: rgb(246, 137, 137);}
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Sobre Imagens Dinamicas</h1>
+    <p>Imagens dinamicas sao imagens que se adaptam de acordo com o tamanho da tela do usuario. Para cada tamanho de tela, podem ser criadas imagens de diferentes tamanhos para melhor se adaptar. Para fazer isso usamos a tag &lt;picture&gt;, e <ins>seguindo a ordem da menor para a maior</ins>, selecionamos a maior imagem primeiro como imagem padrao, (o ultimo item da tag picture deve ser a imagem padrao, a maior) com a tag <mark><strong><code>&lt;img src="Seu Arquivo" alt="Descricao Semantica"&gt;</code></strong></mark>. Acima desse codigo colocaremos a imagem media, ou a segunda maior (Seguindo a ordem da maior para a menor), com a <abbr title="&lt;source:media:type&gt;">tag</abbr> <mark><strong><code>: &lt;source media="(max-width: Colocar o tamanho maximo da imagem)" srcset="Selecionar arquivo alternativo para caso a tela for menor que o tamanho anterior" type=image/(Colocar qual tipo de arquivo)&gt;</code></strong></mark>. E assim sucetivamente, caso voce queira usar imagens cada vez menores no site, so seguir o padrao acima, sempre respeitando a ordem e colocando a imagem menor primeiro. Segue o exemplo: <br>
+    </p>
+
+<pre><mark><code>
+&lt;picture&gt;
+&lt;source media="(max-width:750px )" srcset="imagens/small.png" type="image/png"&gt;
+&lt;source media="(max-width:1050px)" srcset="imagens/medium.png" type="image/png"&gt;
+&lt;img src="imagens/Untitled.png" alt="Imagem Grande"&gt;
+&lt;/picture&gt;</code></mark></pre> 
+<p><strong>Segue o codigo acima em funcionamento.</strong> Teste aumentar e diminuir a tela do computador.</p>
+           <picture>
+            <source media="(max-width:750px )" srcset="imagens/small.png" type="image/png">
+            <source media="(max-width:1050px )" srcset="imagens/medium.png" type="image/png">
+            <img src="imagens/Untitled.png" alt="Imagem Grande">
+           </picture>
+
+        
+        
+        
+
+    
+</body>
+</html>

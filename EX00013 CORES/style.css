@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Dark' ;
+    src: url(MidnightMinutes_DEMO.otf);
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+body {
+background-image: linear-gradient(to right,#4F0000, #B50000, #F50F0F, #B50000, #4F0000 );
+
+}
+img { margin: auto;
+      display: block;
+    width: 890px;}
+h1 {text-align: center;
+     text-shadow: 1px 2px 0px #ffffffb4;
+     font-family: 'Dark', Times, serif;
+    font-size: 4em;
+    }
+h2 {font-family: 'Dark';
+    font-size: 2em;
+    text-shadow:2px 1px 1px #B50000 ;}
+     
+main {background-color: white;
+    text-align: center;
+    padding: 8px;
+    margin: auto;
+    border-radius: 10px;
+    width: 890px;
+    box-shadow: 5px 5px 5px black;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+ol li img { width: 250px;
+            margin: auto;
+}
+
+ol li {
+        font-size: 55px;
+        text-shadow: 0.5px 0.5px 0px white;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        margin: 50px 120px 30px
+    
+
+        
+}
+
+
+
