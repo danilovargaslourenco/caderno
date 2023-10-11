@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgorund</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Learning about Background</h1>
+
+    <div class="quadrado" id="q1">
+    </div>
+    <div class="quadrado" id="q2">
+    </div>
+    <div class="quadrado" id="q3">
+    </div>
+    <h1>Background-Image</h1>
+    <p><strong>Backgorund-repeat</strong>: essa tag determinara como a sua imagem sera replicada, como padrao, o determinado e o <code>Backgorund-repeat: repeat</code>, que ela sera replicada para completar toda a viewport. Mas temos outras opcoes de personalizacao, como <code>repeat-x = repetir horizontalmente</code>, <code>repeat-y = repetir verticalmente</code>, <code>no-repeat = para a imagem ser inserida apenas 1x</code>, e temos <code>round = para a imagem ser inserida 100% na sua viewport, tornando assim responsiva.</code> </p>
+    <p><strong>Background-size</strong>: essa tag determina o tamanho do seu background e como ele se comportara responsivamente. Temos varios valores para determinar isso. A principio, temos como determina-lo com % de acordo com seu parent (se ele estiver no body, 30% sera em relacao ao body e a altura e largura do body), podemos definir a <code>width and height</code>, mas nao se tornara responsivo, temos <code>contain</code> que ele se esforcara para mostrar 100% da imagem sempre, mesmo achatando a imagem em diferentes viewports, e temos a <code>cover</code>, que se encarregara de tornar a imagem responsiva, mostrando respectivamente ao tamanho da viewport, no caso do contain, a imagem tem um fim, a nao ser que use o <code>Backgorund-repeat</code>.  </p>
+    <p><strong>Backgorund-position</strong>: essa tag sera usada para definir onde a imagem sera colocada no bloco, importante sempre colocar ela relativa a viewport (100vh), voce pode determinar se ela comecara do <code>top center</code>, ou <code>left bottom</code>, ou tambem <code>right bottom</code> e assim por diante. Para uma personalizacao mais profunda, vode pode determinar tambem porcentagem de <code>x = %horizontal</code> e <code>y = %vertical</code>.</p>
+    <p><strong>Background-attachment</strong>: essa tag determinara como a imagem do fundo se comportara com relacao ao resto do website. Temos a <code>fixed</code>, para a imagem de fundo permanecer parada enquanto scollar o site, e temos tambem o <code>scroll</code>, que a imagem de fundo tambem sera scrollada junto com o site.</p>
+
+    <h3>ShortHand Background</h3>
+    <p> color > image > position > / > size > repeat > attachment. <br>
+    Exemplo: <code>background: #000 url('imagem.jpg') center top/cover no-repeat fixed;</code></p> 
+</body>
+</html>
