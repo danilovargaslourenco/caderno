@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    margin: 0%;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 150px;
+}
+
+#cabecalho {
+    
+}
+
+#cabecalho > h1 {
+    margin: auto;
+    padding: 35px 35px 5px 35px;
+    font-size: clamp(50px, 10vh, 100px);
+    min-height: 8vh;
+    max-height: 8vh;
+
+}
+
+#cabecalho > p {
+    font-size: clamp(30px, 5vh, 6vh);
+}

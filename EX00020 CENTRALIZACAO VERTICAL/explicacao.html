@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizacao</title>
+</head>
+<style>
+    body {
+        line-height: 25px;
+    }
+
+    code {
+        background-color: greenyellow;
+        border: 2px black solid;
+        padding: 3px;
+        font-weight: 500;
+    }
+</style>
+<body>
+    <h1>Centralizacao Vertical</h1>
+
+
+    <p>
+        Para centralizar um item horizontalmente ja sabemos que podemos usar o <code>margin: auto;</code>, mas e para centralizar verticalmente? Se quiser colocar uma box centralizada dentro de outra div ou de algum container, como fazemos? Primeiro precisamos conhecer a tag <code>position</code>. Usando o <code>position</code>, podemos definir o <code>top, bottom, left and right</code> do seu bloco, facilitando a definicao do posicionamento.
+    </p>
+    <ul>
+        <li><code>relative:</code> position:relative significa que o bloco sera posicionado em relacao a sua posicao original. Normalmente a box (container) que recebera outro elemento para ser centralizado, levara a condicao <code>relative</code> </li>
+        <li><code>absolute:</code> position:absolute voce transforma seu bloco em um "fantasma", ele sera ignorado em comparacao com os outros elementos, normalmente o item (conteudo) que sera centralizado dentro de outro, levara a condicao <code>absolute</code>. Ele se comportara de acordo com seu parent, se nao tiver parent, se comportara de acordo com a viewport.</li>
+        <li><code>sticky:</code> position:sticky mantera seu conteudo selecionado na tela quando scrollado, como, por exemplo, manter um botao na parte baixa do site, mesmo voce scrollando todo o site, o botao se mantera na parte inferior da tela.</li>
+        <li><code>fixed:</code> position:fixed deixara seu conteudo parado na tela, independente se voce scrollar, ele se mantera na viewport.</li>
+    </ul>
+
+    <h2>Transform</h2>
+    <p>Como padrao, todo bloco tem sua origem no top left, entao todos iniciarao na sua extrema ponta superior esquerda, para editar esse ponto inicial usamos o <br>
+    <code>transform : translate (20% 20%)</code>, assim definimos onde que ele ira iniciar de fato. Valores positivos, como anteriormente significarao: left and top e valores negativos (-20% -20%) significarao right and bottom.</p>
+</body>
+</html>
