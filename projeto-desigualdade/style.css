@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    margin: 0%;
+    margin: 0;
 }
 
 header {
@@ -34,4 +34,63 @@ header {
 
 #cabecalho > p > a:hover {
     text-decoration: underline;
+}
+
+.whiteblock {
+    width: 120vw;
+    line-height: 35px;
+    padding: 20px 20px 20px 30px;
+    font-weight: bold;
+    font-size: 3.5vw;
+    margin-bottom: 30px;
+    display: block;
+
+}
+
+.whiteblock > p {
+    width: 50%;
+
+}
+
+
+.imageblock {
+    width: 120vw;
+    height: 350px;
+    line-height: 35px;
+    padding: 20px 20px 20px 30px;
+    font-weight: bold;
+    font-size: 3.5vw;
+    margin-bottom: 30px;
+    box-shadow: inset 5px 3px 29px 1px;
+}
+
+.imageblock > p {
+    background-color: rgba(0, 0, 0, 0.371);
+    color: white;
+    width: 60%;
+    height: 70%;
+    text-align: justify;
+    line-height: 50px;
+    padding-top: 5px;
+
+
+
+}
+
+#imageblock1 {
+    background-image: url(images/criancas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+#imageblock2 {
+    background-image: url(images/favela.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
 }
