@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Tables</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        
+    }
+
+    th {
+        border: 1px solid black;
+        height: 35px;
+        width: 130px;
+        background-color: lightgray;
+    }
+
+    td {
+        border: 1px solid black;
+        height: 35px;
+        width: 130px;
+        background-color: rgb(232, 158, 158);
+        text-align: center;
+    }
+
+    td:hover {
+        background-color: aquamarine;
+        color: blue;
+        transition: 1s;
+
+    }
+
+    #footer {
+        border: 2px solid red;
+
+    }
+
+    #footer th {
+        border: 1px solid red;
+    }
+</style>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <p>Tabelas grandes precisam ser ranqueadas no Google e tambem seus dados assimilados pelo navegador, portanto, precisamos de semantica.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+                <th>Coluna 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
+                <td>A4</td>
+            </tr>
+
+            <tr>
+                <td>B1</td>
+                <td>B2</td>
+                <td>B3</td>
+                <td>B4</td>
+            </tr>
+
+            <tr>
+                <td>C1</td>
+                <td>C2</td>
+                <td>C3</td>
+                <td>C4</td>
+            </tr>
+
+            <tr>
+                <td>D1</td>
+                <td>D2</td>
+                <td>D3</td>
+                <td>D4</td>
+            </tr>
+            <tr>
+                <td>E1</td>
+                <td>E2</td>
+                <td>E3</td>
+                <td>E4</td>
+            </t>
+
+            <tr>
+                <td>F1</td>
+                <td>F2</td>
+                <td>F3</td>
+                <td>F4</td>
+            </tr>
+
+            <tr>
+                <td>G1</td>
+                <td>G2</td>
+                <td>G3</td>
+                <td>G4</td>
+            </tr>
+            
+            <tr>
+                <td>H1</td>
+                <td>H2</td>
+                <td>H3</td>
+                <td>H4</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr id="footer">
+                <th>End 1</th>
+                <th>End 2</th>
+                <th>End 3</th>
+                <th>End 4</th>
+            </tr>
+
+        </tfoot>
+
+    </table>
+</body>
+</html>
