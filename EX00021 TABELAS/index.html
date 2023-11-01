@@ -15,6 +15,11 @@ table {
     border-collapse: collapse;
 }
 
+thead th {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
 
 td {
     width: 100px;
@@ -47,6 +52,15 @@ mark {
 <body>
     <h1>My first table</h1>
     <table>
+
+        <thead> 
+            <th scope="col">Linha 1</th>
+            <th scope="col">Linha 2</th>
+            <th scope="col">Linha 3</th>
+            <th scope="col">Linha 4</th>
+            <th scope="col">Linha 4</th>
+        </thead>
+
         <tr class="line">
             <td>A1</td>
             <td>A2</td>

@@ -42,17 +42,27 @@
     #footer th {
         border: 1px solid red;
     }
+
+    code {
+    background-color: greenyellow;
+    font-weight: bold;
+    border: 1px solid black;
+    margin: 1.5px;
+    padding: 1.5px; }
 </style>
 <body>
     <h1>Tabelas Grandes</h1>
-    <p>Tabelas grandes precisam ser ranqueadas no Google e tambem seus dados assimilados pelo navegador, portanto, precisamos de semantica.</p>
+    <p>Tabelas com muita informacao precisam ser ranqueadas no Google e tambem seus dados assimilados pelo navegador, portanto, precisamos de semantica, separando-as por <code>caption, thead, tbody e tfoot</code>. Dentro de cada uma dessas tags semanticas podem ser inseridas <code>tr (TableRow), th (Table Head) e td (Table Data).</code>A tag CAPTION serve para uma descricao/legenda da sua tabela, ela sera colocada primeiro que o thead e aparecera centralizada no topo da sua tabela. <br>
+        <br>
+    <strong>Scope:</strong> essa tag vai dentro do seu <code>th</code> e indicara se o <code>td</code> seguira de acordo com a coluna ou com a linha, caso indique a coluna, use: <code>scope:col</code>, e caso indique a linha: <code>scope:row</code></p>
     <table>
+        <caption>Lorem ipsum dolor sit amet consectetur.</caption>
         <thead>
             <tr>
-                <th>Coluna 1</th>
-                <th>Coluna 2</th>
-                <th>Coluna 3</th>
-                <th>Coluna 4</th>
+                <th scope="col">Coluna 1</th>
+                <th scope="col">Coluna 2</th>
+                <th scope="col">Coluna 3</th>
+                <th scope="col">Coluna 4</th>
             </tr>
         </thead>
         <tbody>
