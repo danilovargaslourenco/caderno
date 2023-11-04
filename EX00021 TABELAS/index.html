@@ -8,6 +8,7 @@
     <style>
 body {
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
 }
  
 table {
@@ -19,6 +20,7 @@ thead th {
     background-color: blue;
     color: rgb(255, 255, 255);
     padding: 10px;
+    border: 1px black solid;
 }
 
 td {
@@ -103,5 +105,9 @@ Muito importante seguir de maneira correta a hierarquia na hora de escrever seu 
 
 <h3>ALINHAMENTO</h3>
 <p>Podemos alinhar o conteudo da nossa tabela de 2 maneiras: <mark><code>text-align</code></mark>= para alinhar horizontalmente nosso conteudo, vode pode usar left, center e right. Tambem podemos usar o <mark><code>vertical-align</code></mark> = para alinhar verticalmente, podemos usar o top, middle e bottom.</p>
+
+<h3>EFEITO ZEBRADO</h3>
+<p>Para facilitar a leitura em tabelas grandes e com bastante dados, podemos criar um efeito zebrado, que no caso seria uma linha de cada cor, para isso precisamos usar a pseudo-classe <mark><code>:nth-child(2n)</code></mark>, essa pseudo-classe significa que a cada 2 
+    (por isso o 2n, mas pode ser 3n, 4n etc) tags selecionadas elas terao a configuracao que vc escolher. Por exemplo, se voce colocar <mark><code>tr:nth-child(2n) { background-color:black }</code></mark> a cada 2 tr, uma tera background-color black. Podemos usar os termos <code>odd and even</code>, para, respectivamente, impar e par.</p>
 </body>
 </html>

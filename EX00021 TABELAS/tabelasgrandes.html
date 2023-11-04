@@ -23,15 +23,19 @@
         border: 1px solid black;
         height: 35px;
         width: 130px;
-        background-color: rgb(232, 158, 158);
         text-align: center;
     }
 
-    td:hover {
-        background-color: aquamarine;
-        color: blue;
-        transition: 1s;
+    tbody tr:hover:nth-child(odd) {
+        background-color: rgb(221, 152, 152);
+        color: red;
+        transition: 0.5s;
+    }
 
+    tbody tr:hover:nth-child(even) {
+        background-color: rgb(181, 221, 152);
+        color: rgb(10, 64, 23);
+        transition: 0.5s;
     }
 
     #footer {
@@ -41,6 +45,14 @@
 
     #footer th {
         border: 1px solid red;
+    }
+
+    {
+        background-color: antiquewhite;
+    }
+
+     tbody tr:nth-child(2n) {
+        background-color: rgba(182, 182, 182, 0.466);
     }
 
     code {
@@ -98,7 +110,7 @@
                 <td>E2</td>
                 <td>E3</td>
                 <td>E4</td>
-            </t>
+            </tr>
 
             <tr>
                 <td>F1</td>
