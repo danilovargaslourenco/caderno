@@ -9,6 +9,7 @@
 <style>
     table {
         border-collapse: collapse;
+        position: relative;
         
     }
 
@@ -25,6 +26,17 @@
         width: 130px;
         text-align: center;
     }
+
+  caption {
+        position: sticky;
+        top: -0.5px;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: 18px;
+    }
+
 
     tbody tr:hover:nth-child(odd) {
         background-color: rgb(221, 152, 152);
@@ -61,6 +73,8 @@
     border: 1px solid black;
     margin: 1.5px;
     padding: 1.5px; }
+
+
 </style>
 <body>
     <h1>Tabelas Grandes</h1>
@@ -68,15 +82,17 @@
         <br>
     <strong>Scope:</strong> essa tag vai dentro do seu <code>th</code> e indicara se o <code>td</code> seguira de acordo com a coluna ou com a linha, caso indique a coluna, use: <code>scope:col</code>, e caso indique a linha: <code>scope:row</code></p>
     <table>
-        <caption>Lorem ipsum dolor sit amet consectetur.</caption>
-        <thead>
-            <tr>
-                <th scope="col">Coluna 1</th>
-                <th scope="col">Coluna 2</th>
-                <th scope="col">Coluna 3</th>
-                <th scope="col">Coluna 4</th>
-            </tr>
-        </thead>
+        <div id="sticky">
+            <caption>Lorem ipsum dolor sit amet consectetur.</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Coluna 1</th>
+                    <th scope="col">Coluna 2</th>
+                    <th scope="col">Coluna 3</th>
+                    <th scope="col">Coluna 4</th>
+                </tr>
+            </thead>
+        </div>
         <tbody>
             <tr>
                 <td>A1</td>
@@ -146,5 +162,7 @@
         </tfoot>
 
     </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, numquam. Quidem a accusamus eum molestiae, iusto molestias tempora vel possimus dignissimos, ut reprehenderit quasi quia quod culpa totam recusandae. Possimus non officia repellat praesentium minima commodi enim dolore labore, fugiat dolores in suscipit quos iure porro nobis perspiciatis quam aspernatur dolorum sunt iste? Expedita perspiciatis quasi molestias esse. Explicabo harum voluptatibus nobis aperiam odio libero a. Labore quod amet fuga, dolores illum laborum adipisci omnis eligendi ipsam magnam distinctio sed ullam. Ipsum ducimus facilis, possimus quod dicta perferendis porro a omnis eius at dolor quisquam sint est, recusandae magni repudiandae, sequi doloremque dolorum nostrum reiciendis. Omnis laborum vel totam possimus. Nam iste debitis dolor quam natus, assumenda commodi, facere repudiandae ratione ut obcaecati, nihil minima deleniti minus! Doloremque esse sed doloribus qui quidem dolor perferendis vero est quod fugit accusamus deleniti eaque quo architecto, repudiandae aut ipsam aliquam facilis delectus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum similique voluptatibus eligendi nihil aperiam dicta ad fugiat magni fuga, tenetur reiciendis, ut est sed error sunt tempora. Quos labore recusandae doloremque eaque fugit consectetur architecto, repellendus accusamus tempora quia laborum. Dolorem, tempore harum recusandae expedita eum ipsam veniam illo distinctio accusantium eius quo. Nobis illo velit rerum quaerat ipsa impedit, placeat modi perspiciatis quibusdam, cupiditate iusto alias incidunt aperiam! Perspiciatis quos itaque architecto iste eum! Voluptatum aliquid aliquam quisquam accusantium iusto ad dolorum numquam saepe molestiae, amet deleniti officiis facere, illo tempore? Dolorum magni rerum sed omnis, explicabo in delectus fugiat beatae accusantium exercitationem optio voluptates numquam iusto commodi animi magnam quo earum unde ullam. Nobis corrupti autem, architecto maxime quam earum quae, repellat cumque, neque minus sed. Aspernatur explicabo atque tempore, perspiciatis recusandae numquam minus odit reiciendis dolor facilis cumque pariatur nesciunt repellat autem eligendi voluptatem aperiam delectus aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, debitis ipsum quam, excepturi incidunt omnis dicta modi praesentium illo aliquid laboriosam facere cupiditate animi! Mollitia explicabo asperiores voluptatem ipsa itaque voluptate cum enim. Est, corrupti? Iste expedita totam itaque voluptatibus tenetur ex quo minus nihil repellat iusto dolore obcaecati necessitatibus asperiores corporis error at reiciendis eligendi, excepturi facere. Quia, sit pariatur, deserunt voluptatum ipsa cumque hic dolore temporibus minus ad doloribus cum in modi quas exercitationem, quaerat corrupti harum quos explicabo illum aliquam. Unde pariatur nesciunt odio quos. Blanditiis corrupti dignissimos ullam iure reiciendis quisquam nostrum, incidunt, itaque magnam temporibus ipsam ad eius iste. Dolor sed voluptas perspiciatis. Minima reprehenderit quam aliquid saepe veritatis quas quibusdam odio consequatur ipsa quisquam. Illo impedit voluptatum culpa totam ad unde magnam soluta quam! Pariatur molestias esse molestiae reiciendis harum. Molestiae amet blanditiis quam veniam minima illum necessitatibus earum atque voluptas sapiente natus inventore quod nostrum, voluptate quaerat voluptatum? Animi, perferendis accusantium officia unde cum saepe quia ex. Officiis, voluptatum ullam veritatis accusantium distinctio, eos tempore voluptatibus id odio pariatur ipsam fugiat natus voluptates. Recusandae tempore provident temporibus possimus error voluptatem pariatur culpa! Cumque vitae pariatur, dicta nesciunt deleniti neque quaerat temporibus aperiam accusantium!</p>
 </body>
 </html>

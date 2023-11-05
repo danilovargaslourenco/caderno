@@ -93,21 +93,24 @@ mark {
         </tr>
     </table>
 
-    <p>Muito importante criarmos tabelas para apresentarmos informacoes e dados para os nossos consumidores. Importante sabermos a <strong>hierarquia de tabelas (simples)</strong>
+<p>Muito importante criarmos tabelas para apresentarmos informacoes e dados para os nossos consumidores. Importante sabermos a <strong>hierarquia de tabelas (simples)</strong>
     <pre>
-<strong>TABLE &lt;tr&gt;</strong> = tabela
+    <strong>TABLE &lt;tr&gt;</strong> = tabela
    <strong>TABLE ROW &lt;tr&gt;</strong> = linha de tabela 
      <strong>TABLE HEADER &lt;th&gt;</strong> = cabeçalho de tabela
      <strong>TABLE DATA &lt;td&gt;</strong> = dados da tabela.
     </pre>
-Uma tag de CSS muito importante é o <mark><code>border-collapse: collapse</code></mark>, para as bordas se juntarem e ficar igual uma tabela normal. A configuracao normal e <mark><code>border-collapse: separate</code></mark>. Para as bordas ficarem juntas como o exemplo acima, voce precisara dessa definicao. <br>
-Muito importante seguir de maneira correta a hierarquia na hora de escrever seu codigo, porque se voce errar a estrutura, ira baguncar a tabela e nao ficara do jeito que voce quer. Tabelas sao rigidas e nao permitem erros de digitacao.</p>
+    Uma tag de CSS muito importante é o <mark><code>border-collapse: collapse</code></mark>, para as bordas se juntarem e ficar igual uma tabela normal. A configuracao normal e <mark><code>border-collapse: separate</code></mark>. Para as bordas ficarem juntas como o exemplo acima, voce precisara dessa definicao. <br>
+    Muito importante seguir de maneira correta a hierarquia na hora de escrever seu codigo, porque se voce errar a estrutura, ira baguncar a tabela e nao ficara do jeito que voce quer. Tabelas sao rigidas e nao permitem erros de digitacao.
+</p>
 
 <h3>ALINHAMENTO</h3>
-<p>Podemos alinhar o conteudo da nossa tabela de 2 maneiras: <mark><code>text-align</code></mark>= para alinhar horizontalmente nosso conteudo, vode pode usar left, center e right. Tambem podemos usar o <mark><code>vertical-align</code></mark> = para alinhar verticalmente, podemos usar o top, middle e bottom.</p>
+    <p>Podemos alinhar o conteudo da nossa tabela de 2 maneiras: <mark><code>text-align</code></mark>= para alinhar horizontalmente nosso conteudo, vode pode usar left, center e right. Tambem podemos usar o <mark><code>vertical-align</code></mark> = para alinhar verticalmente, podemos usar o top, middle e bottom.</p>
 
 <h3>EFEITO ZEBRADO</h3>
-<p>Para facilitar a leitura em tabelas grandes e com bastante dados, podemos criar um efeito zebrado, que no caso seria uma linha de cada cor, para isso precisamos usar a pseudo-classe <mark><code>:nth-child(2n)</code></mark>, essa pseudo-classe significa que a cada 2 
+    <p>Para facilitar a leitura em tabelas grandes e com bastante dados, podemos criar um efeito zebrado, que no caso seria uma linha de cada cor, para isso precisamos usar a pseudo-classe <mark><code>:nth-child(2n)</code></mark>, essa pseudo-classe significa que a cada 2 
     (por isso o 2n, mas pode ser 3n, 4n etc) tags selecionadas elas terao a configuracao que vc escolher. Por exemplo, se voce colocar <mark><code>tr:nth-child(2n) { background-color:black }</code></mark> a cada 2 tr, uma tera background-color black. Podemos usar os termos <code>odd and even</code>, para, respectivamente, impar e par.</p>
+<h3>MESCLAGEM DE CELULAS</h3>
+<p></p>
 </body>
 </html>
