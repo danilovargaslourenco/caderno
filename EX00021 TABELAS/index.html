@@ -68,28 +68,25 @@ mark {
             <td>A2</td>
             <td>A3</td>
             <td>A4</td>
-            <td class="result">A5</td>
+            <td class="result" rowspan="4">A5</td>
         </tr>
         <tr>
-            <td>B1</td>
-            <td>B2</td>
-            <td>B3</td>
-            <td>B4</td>
-            <td class="result">B5</td>
+            <td colspan="4">B1</td>
+            
         </tr>
         <tr class="line">
             <td>C1</td>
             <td>C2</td>
             <td>C3</td>
             <td>C4</td>
-            <td class="result">C5</td>
+            
         </tr>
         <tr>
             <td>D1</td>
             <td>D2</td>
             <td>D3</td>
             <td>D4</td>
-            <td class="result">D5</td>
+            
         </tr>
     </table>
 
@@ -111,6 +108,6 @@ mark {
     <p>Para facilitar a leitura em tabelas grandes e com bastante dados, podemos criar um efeito zebrado, que no caso seria uma linha de cada cor, para isso precisamos usar a pseudo-classe <mark><code>:nth-child(2n)</code></mark>, essa pseudo-classe significa que a cada 2 
     (por isso o 2n, mas pode ser 3n, 4n etc) tags selecionadas elas terao a configuracao que vc escolher. Por exemplo, se voce colocar <mark><code>tr:nth-child(2n) { background-color:black }</code></mark> a cada 2 tr, uma tera background-color black. Podemos usar os termos <code>odd and even</code>, para, respectivamente, impar e par.</p>
 <h3>MESCLAGEM DE CELULAS</h3>
-<p></p>
+<p>Mesclagem de celulas e quando voce quer que um conteudo de sua tabela ocupe 2 ou mais espacos. As vezes ocupar 2 espacos verticalmente (linhas) e as vezes horizontalmente (colunas). Para fazer isso, primeiro voce precisa deletar a celula vizinha da celula que voce quer expandir e selecionar quantas colunas sua celula ocupara usando: <mark><code>colspan=</code></mark> e para linhas <mark><code>rowspan=</code></mark></p>
 </body>
 </html>
