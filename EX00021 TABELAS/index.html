@@ -112,5 +112,18 @@ mark {
 <h3>ESCOPO DE GRUPOS</h3>
 <p>Assim como temos o escopo (scope) de coluna e de linha, tambem temos para grupo de colunas e grupo de linhas, para quando uma linha/coluna se referem a mais de uma linha. Escopo so se usa em th, para direcionar o navegador para a leitura correta. <mark><code>scope=colgroup</code></mark> - grupo de colunas. <mark><code>scope=rowgroup</code></mark> - grupo de linhas.
 </p>
+<h3>PERSONALIZACAO DE COLUNAS</h3>
+<p>Para selecionarmos uma linha para customizacao, fica facil, basta selecionar o <code>tr</code> e customizar, mas e para selecionar uma coluna? Precisamos usar a tag <mark><code>colgroup</code></mark>, criaremos dentro da <code>colgroup</code> quantas colunas queremos na nossa tabela com a tag <mark><code>col</code></mark>, agora basta colocar ou uma class ou id nelas e assim voce personalizara uma coluna por inteiro, de maneira que fique facil a sua atualização. <br>
+Exemplo:<pre><code>
+    &lt;colgroup&gt;
+&lt; col class=x1 &gt;
+&lt; col class=x2 &gt;
+&lt; col class=x3 &gt;
+&lt; col class=x4 &gt;
+     &lt;/colgroup&gt;
+</code></pre></p>
+
+<h3>RESPONSIVIDADE EM TABELAS</h3>
+<p></p>
 </body>
 </html>
